@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrainGain</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="homepage_names">
+
+        <item>Favourites</item>
+        <item>Training Programs</item>
+        <item>Stats</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="button_names">
+        <item>Training</item>
+        <item>Statistics</item>
+    </string-array>
+
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_azure_services">AzureServicesActivity</string>
+
+</resources>
