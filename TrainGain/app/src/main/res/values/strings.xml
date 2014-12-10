@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrainGain</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1571512883067696</string>
+
+    <string-array name="homepage_names">
+        <item>Calculations</item>
+        <item>Favourites</item>
+        <item>Training Programs</item>
+        <item>Stats</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="button_names">
+        <item>Training</item>
+        <item>Statistics</item>
+    </string-array>
+
+    <string name="confirm_registry">Email not found. Do you want to register? </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="complete_registration">Confirm?</string>
+    <string name="updatingReport">Updating Report</string>
+    <string name="testing">id is 2!!!</string>
+    <string name="unsuccessful">Unsuccessful</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_azure_services">AzureServicesActivity</string>
+    <string name="title_activity_register">Register</string>
+
+</resources>
