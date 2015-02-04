@@ -1,0 +1,6 @@
+C:\Users\carl\Documents\TrainGainWebApi\TrainGainV1\TrainGainV1.Azure\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\carl\Documents\TrainGainWebApi\TrainGainV1\TrainGainV1.Azure\bin\Debug\ServiceDefinition.csdef
+C:\Users\carl\Documents\TrainGainWebApi\v1\TrainGainV1\TrainGainV1.Azure\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\carl\Documents\TrainGainWebApi\v1\TrainGainV1\TrainGainV1.Azure\bin\Debug\ServiceDefinition.csdef
+C:\Users\carl\Documents\v1\TrainGainV1\TrainGainV1.Azure\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\carl\Documents\v1\TrainGainV1\TrainGainV1.Azure\bin\Debug\ServiceDefinition.csdef
