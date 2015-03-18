@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottomBar"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/userName"
+        android:ems="10"
+        android:id="@+id/personNameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text=""
+        android:id="@+id/personName"
+        android:layout_below="@+id/personNameLabel" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_email"
+        android:id="@+id/emailAddressLabel"
+        android:layout_below="@+id/personName" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text=""
+        android:id="@+id/emailAddress"
+        android:layout_below="@+id/emailAddressLabel" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dob"
+        android:id="@+id/dobLabel"
+        android:layout_below="@+id/emailAddress" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text=""
+        android:id="@+id/dobText"
+        android:layout_below="@+id/dobLabel" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:id="@+id/weightLabel"
+        android:layout_below="@+id/dobText" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text=""
+        android:id="@+id/weightText"
+        android:layout_below="@+id/weightLabel" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:id="@+id/heightLabel"
+        android:layout_below="@+id/weightText" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text=""
+        android:id="@+id/heightText"
+        android:layout_below="@+id/heightLabel" />
+
+
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/edit"
+        android:id="@+id/editBtn"
+        android:layout_below="@+id/heightText"
+        />
+
+
+
+
+
+
+</RelativeLayout>

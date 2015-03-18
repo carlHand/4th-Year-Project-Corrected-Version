@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projectyr4x00091174.carl.traingain"
+    android:installLocation="preferExternal" >
+
+    <uses-sdk android:minSdkVersion="10"
+        android:targetSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <!--
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        -->
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.HomePage"
+            android:label="@string/title_activity_home_page" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.AzureServicesActivity"
+            android:label="@string/title_activity_azure_services" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        -->
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.TestAdding"
+            android:label="@string/title_activity_test_adding" >
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.CallAPI"
+            android:label="@string/title_activity_call_api" >
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.SearchProgram"
+            android:label="@string/title_activity_training_program"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.HomePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.HomePage" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.TrainingProgramListActivity"
+            android:label="@string/title_trainingprogram_list"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.SearchProgram" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.SearchProgram" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.TrainingProgramDetailActivity"
+            android:label="@string/title_trainingprogram_detail"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.TrainingProgramListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.TrainingProgramListActivity" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.Stats"
+            android:label="@string/title_activity_stats" >
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.CalcHealthMetrics"
+            android:label="@string/title_activity_calc_health_metrics"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.HomePage"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.HomePage" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.PersonalProgramListActivity"
+            android:label="@string/title_personalprogram_list"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.Profile" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.PersonalProgramDetailActivity"
+            android:label="@string/title_personalprogram_detail"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.PersonalProgramListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.PersonalProgramListActivity" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.RegisterNew"
+            android:label="@string/title_activity_register_new"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.TestAdding" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.TestAdding" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.HomePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.HomePage" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.Account"
+            android:label="@string/title_activity_account"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.Profile" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.GraphListActivity"
+            android:label="@string/title_graph_list"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.Profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.Profile" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.GraphDetailActivity"
+            android:label="@string/title_graph_detail"
+            android:parentActivityName="com.projectyr4x00091174.carl.traingain.GraphListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.GraphListActivity" />
+        </activity>
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.ProgramResults"
+            android:label="@string/title_activity_program_results" >
+        </activity>
+    </application>
+
+</manifest>

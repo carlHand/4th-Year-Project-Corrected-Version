@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrainGain</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1571512883067696</string>
+
+    <!-- Menu Options -->
+    <string name="action_home">Home</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_caculate_metrics">Calculate Metrics</string>
+    <string name="action_search">Search</string>
+    <string name="action_my_programs">My Programs</string>
+
+    <string-array name="homepage_names">
+        <item>Training Programs</item>
+        <item>Calculations</item>
+        <item>Favourites</item>
+        <item>Stats</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="button_names">
+        <item>Training</item>
+        <item>Statistics</item>
+    </string-array>
+
+    <string name="confirm_registry">Email not found. Do you want to register? </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="complete_registration">Confirm?</string>
+    <string name="updatingReport">Updating Report</string>
+    <string name="testing">id is 2!!!</string>
+    <string name="unsuccessful">Unsuccessful</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_azure_services">AzureServicesActivity</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_test_adding">Login</string>
+    <string name="title_activity_call_api">CallAPI</string>
+    <string name="title_activity_training__program">Training_Program</string>
+    <string name="title_activity_training_program">TrainingProgram</string>
+    <string name="title_activity_list_program">ListProgram</string>
+    <string name="title_trainingprogram_list">Training Programs</string>
+    <string name="title_trainingprogram_detail">Training Program Detail</string>
+    <string name="title_test_list">Tests</string>
+    <string name="title_test_detail">Test Detail</string>
+    <string name="title_activity_stats">Stats</string>
+    <string name="title_activity_calc_health_metrics">CalcHealthMetrics</string>
+    <string name="title_personalprogram_list">PersonalPrograms</string>
+    <string name="title_personalprogram_detail">PersonalProgram Detail</string>
+    <string name="title_activity_account">Account</string>
+
+    <!-- Register layout -->
+    <string name="register">Register</string>
+    <string name="userName">UserName</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+
+    <!-- Login layout -->
+    <string name="signInBtn">Sign In</string>
+
+    <!-- HomePage Layout -->
+    <string name="logoutBtn">Logout</string>
+
+    <!-- Training Program Layout -->
+    <string name="searchBtn">Search</string>
+    <string name="headingSearch">Find Your Program</string>
+
+    <!-- BMI Layout -->
+    <string name="weightField">Weight</string>
+    <string name="heightField">Height</string>
+    <string name="ageField">Age</string>
+    <string name="ftLabel">ft</string>
+    <string name="inLabel">In</string>
+    <string name="calBMI">Calculate BMI</string>
+    <string name="createAccount">Create Account</string>
+    <string name="title_activity_register_new">RegisterNew</string>
+
+    <!-- Metabolism Layout -->
+    <string name="genderLabel">Gender</string>
+    <string name="maleRadio">Male</string>
+    <string name="femaleRadio">Female</string>
+    <string name="calcBtn">Calculate</string>
+
+    <!-- Calorie Intake -->
+    <string name="bmrLabel">BMR</string>
+    <string name="activityLabel">Activity Level</string>
+
+    <!-- Target Heart Rate -->
+    <string name="maxHeartRateLabel">Max Heart Rate</string>
+    <string name="heartRateRangeLabel">Heart Rate Range</string>
+
+    <!-- Fragment Training Program Layout -->
+    <string name="saveBtn">Save Program</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <!-- Account Layout -->
+    <string name="dob">Date Of Birth</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="edit">Edit</string>
+
+    <!-- Profile Layout -->
+    <string name="programs">My Programs</string>
+    <string name="graph">Graph</string>
+    <string name="title_graph_list">graphs</string>
+    <string name="title_graph_detail">graph Detail</string>
+
+    <!-- fragment_graph_detail Layout -->
+    <string name="exercise">Choose Exercise</string>
+
+    <!-- fragment_personalprogram_detail Layout -->
+    <string name="lifts">Initial Lifts</string>
+    <string name="update">Update Lifts</string>
+    <string name="title_activity_program_results">ProgramResults</string>
+
+    <!-- program_results Layout-->
+    <string name="bench">Bench Press</string>
+    <string name="squat">Squat</string>
+    <string name="deadlift">Deadlift</string>
+    <string name="chinUps">Chin ups</string>
+    <string name="shoulderPress">Shoulder Press</string>
+    <string name="saveButton">Save</string>
+
+</resources>

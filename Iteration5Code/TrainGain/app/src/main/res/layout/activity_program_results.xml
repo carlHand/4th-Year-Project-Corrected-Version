@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.projectyr4x00091174.carl.traingain.ProgramResults">
+
+    <TextView android:text="@string/bench"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/benchLabel" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/benchValue"
+        android:layout_toEndOf="@+id/benchLabel"
+        android:layout_alignTop="@+id/benchLabel"
+        android:layout_alignLeft="@+id/shoulderPressValue"
+        android:layout_alignStart="@+id/shoulderPressValue" />
+
+    <TextView android:text="@string/squat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/squatLabel"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/squatValue"
+        android:layout_toStartOf="@+id/squatValue" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/squatValue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView android:text="@string/deadlift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deadliftLabel"
+        android:layout_below="@+id/benchValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/deadliftValue"
+        android:layout_toEndOf="@+id/shoulderPressLabel"
+        android:layout_alignBottom="@+id/deadliftLabel"
+        android:layout_toRightOf="@+id/shoulderPressLabel" />
+
+    <TextView android:text="@string/chinUps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chinUpsLabel"
+        android:layout_alignBottom="@+id/deadliftValue"
+        android:layout_toLeftOf="@+id/squatValue"
+        android:layout_toStartOf="@+id/squatValue" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/chinUpsValue"
+        android:layout_toEndOf="@+id/benchLabel"
+        android:layout_alignBottom="@+id/chinUpsLabel"
+        android:layout_alignLeft="@+id/squatValue"
+        android:layout_alignStart="@+id/squatValue"
+        android:layout_alignTop="@+id/deadliftValue" />
+
+    <TextView android:text="@string/shoulderPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shoulderPressLabel"
+        android:layout_below="@+id/deadliftLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/shoulderPressValue"
+        android:layout_toEndOf="@+id/shoulderPressLabel"
+        android:layout_toStartOf="@+id/chinUpsLabel"
+        android:layout_alignBottom="@+id/shoulderPressLabel"
+        android:layout_toRightOf="@+id/shoulderPressLabel"
+        android:layout_alignRight="@+id/deadliftValue"
+        android:layout_alignEnd="@+id/deadliftValue" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/saveButton"
+        android:id="@+id/save"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
