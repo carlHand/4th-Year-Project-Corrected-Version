@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.projectyr4x00091174.carl.traingain.BMIDialog">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewCalorie"
+        android:layout_gravity="center_horizontal|top" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calorieHeading"
+                android:text="@string/caloriesHeading"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/utilizationHeading"
+                android:text="@string/util"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/calorieHeading"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/utilizationDesc"
+                android:text="@string/utilDesc"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/utilizationHeading"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/teeHeading"
+                android:text="@string/TEEh"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/utilizationDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/teeDesc"
+                android:text="@string/TeeD"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/teeHeading"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/factorHeading"
+                android:text="@string/factors"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/teeDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/factorD"
+                android:text="@string/factorsDesc"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/factorHeading"
+                android:textColor="@color/white"
+                />
+
+            <TableLayout android:id="@+id/tab" android:layout_marginTop="10dp" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_below="@+id/factorD">
+            <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/heading1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/activityLevelH" android:textColor="@color/black"></TextView>
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/heading2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/dailyKcals" android:textColor="@color/black"></TextView>
+
+
+            </TableRow>
+            <TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/sed"></TextView>
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row2Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/dailySed"></TextView>
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView  android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row3Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/mild"></TextView>
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row3Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/dailyMild"></TextView>
+
+            </TableRow>
+            <TableRow android:id="@+id/tableRow4" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row4Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/moderate"></TextView>
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row4Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/dailyModerate"></TextView>
+
+            </TableRow>
+            <TableRow android:id="@+id/tableRow5" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row5Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/heavy"></TextView>
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row5Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/dailyHeavy"></TextView>
+
+            </TableRow>
+            <TableRow android:id="@+id/tableRow6" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row6Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/extreme"></TextView>
+                <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row6Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/dailyExtreme"></TextView>
+
+            </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityDescH"
+                android:text="@string/activityLevelDescH"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tab"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activitySedH"
+                android:text="@string/sedU"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/activityDescH"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activitySedDesc"
+                android:text="@string/activitySedD"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/activitySedH"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityMildH"
+                android:text="@string/mildU"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/activitySedDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityMildDesc"
+                android:text="@string/activityMildD"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/activityMildH"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityModH"
+                android:text="@string/moderateU"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/activityMildDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityModDesc"
+                android:text="@string/activityModD"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/activityModH"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityHeavyH"
+                android:text="@string/activityHDes"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/activityModDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityHeavyDesc"
+                android:text="@string/activityHeavyD"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/activityHeavyH"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityExtremeH"
+                android:text="@string/extremeU"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/activityHeavyDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityExtremeDesc"
+                android:text="@string/activityExtremeD"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/activityExtremeH"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+        </ScrollView>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="@string/xBtn"
+        android:id="@+id/xBt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+    </RelativeLayout>

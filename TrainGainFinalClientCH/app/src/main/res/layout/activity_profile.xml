@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.projectyr4x00091174.carl.traingain.Profile">
+
+<!--
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:id="@+id/account"
+        android:layout_toStartOf="@+id/programs"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/programs" />
+-->
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:text="@string/programs"
+        android:id="@+id/programBtn"
+        />
+
+<!--
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:id="@+id/programs"
+        android:layout_alignTop="@+id/account"
+        android:layout_toLeftOf="@+id/progress"
+        android:layout_toStartOf="@+id/progress" />
+-->
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:text="@string/graph"
+        android:id="@+id/graphBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:text="@string/action_settings"
+        android:id="@+id/settingsBtn"
+        android:layout_below="@+id/graphBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+<!--
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:id="@+id/progress"
+        android:layout_alignTop="@+id/programs"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/account"
+        android:layout_toLeftOf="@+id/programs"
+        android:layout_toStartOf="@+id/programs" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/programs"
+        android:layout_toLeftOf="@+id/progress"
+        android:layout_toStartOf="@+id/progress" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/programs"
+        android:layout_toRightOf="@+id/programs"
+        android:layout_toEndOf="@+id/programs" />
+        -->
+</RelativeLayout>

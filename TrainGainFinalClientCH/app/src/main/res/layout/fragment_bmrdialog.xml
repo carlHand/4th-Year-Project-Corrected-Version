@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.projectyr4x00091174.carl.traingain.BMIDialog">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewBMI"
+        android:layout_gravity="center_horizontal|top" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmrHeading"
+            android:text="@string/BMRheading"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmrDesc"
+            android:text="@string/BMRdesc"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/bmrHeading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/varianceHeading"
+                android:text="@string/var"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bmrDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/varianceDesc"
+                android:text="@string/varDesc"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/varianceHeading"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmrHeading2"
+                android:text="@string/BMRsubHeading"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/varianceDesc"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmrDesc2"
+                android:text="@string/BMRdesc2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/bmrHeading2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/summHeading"
+                android:text="@string/summ"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bmrDesc2"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/summaryDesc"
+                android:text="@string/summDesc"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/summHeading"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+        </ScrollView>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="@string/xBtn"
+        android:id="@+id/xBt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+    </RelativeLayout>

@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projectyr4x00091174.carl.traingain.Profile"
+    android:background="@color/homepage_btns_background">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/news"
+        android:textSize="25dp"
+        android:id="@+id/home_page_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/homepage_btns_background"
+        android:textColor="@color/white"/>
+
+    <ViewFlipper
+        android:id="@+id/view_flipper_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="140dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/home1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_view_flipper_plyometrics"
+                android:layout_below="@+id/imageDesc" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:text="@string/plyoPic"
+                android:id="@+id/imageDesc"
+                android:background="@color/homepage_btns_background"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:text="@string/recoveryPic"
+                android:id="@+id/imageDesc2"
+                android:background="@color/homepage_btns_background"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                />
+
+            <ImageView
+                android:id="@+id/home2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_view_flipper_recovery"
+                android:layout_below="@+id/imageDesc2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:text="@string/mentalPic"
+                android:id="@+id/imageDesc3"
+                android:background="@color/homepage_btns_background"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                />
+            <ImageView
+                android:id="@+id/home3"
+                android:layout_width="fill_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="fill_parent"
+                android:src="@drawable/mind_image"
+                android:layout_below="@+id/imageDesc3"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:text="@string/vitDpic"
+                android:id="@+id/imageDesc4"
+                android:background="@color/homepage_btns_background"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                />
+            <ImageView
+                android:id="@+id/home4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vitamin_d"
+                android:layout_below="@+id/imageDesc4"/>
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_marginTop="400dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/homepage_btns_background"
+        android:layout_alignParentEnd="true">-->
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_program"
+        android:id="@+id/programFinderBtn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/graphBtn"
+        android:background="@drawable/ic_graph"
+        android:layout_alignTop="@+id/programFinderBtn"
+        android:layout_toRightOf="@+id/programFinderBtn"
+        android:layout_toEndOf="@+id/programFinderBtn"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_profile"
+        android:id="@+id/profileBtn"
+        android:layout_alignTop="@+id/graphBtn"
+        android:layout_toRightOf="@+id/graphBtn"
+        android:layout_toEndOf="@+id/graphBtn"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_calculator"
+        android:id="@+id/calcBtn"
+        android:layout_below="@+id/graphBtn"
+        android:layout_toLeftOf="@+id/graphBtn"
+        android:layout_toStartOf="@+id/graphBtn"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_settings"
+        android:id="@+id/settingsBtn"
+        android:layout_alignTop="@+id/calcBtn"
+        android:layout_toLeftOf="@+id/profileBtn"
+        android:layout_toStartOf="@+id/profileBtn" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="@string/m"
+        android:id="@+id/mapH"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_alignTop="@+id/settingsBtn"
+        android:layout_alignLeft="@+id/profileBtn"
+        android:layout_alignStart="@+id/profileBtn" />
+
+
+</RelativeLayout>

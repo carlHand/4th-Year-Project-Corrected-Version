@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">Train&amp;Gain</string>
+    <string name="register_title">Register</string>
+    <string name="app_name">TrainGain</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">1571512883067696</string>
+
+    <!-- Nav Slider Menu Items -->
+    <string-array name="nav_slider_items">
+        <item>Home</item>
+        <item>Search</item>
+        <item>Graph</item>
+        <item>Profile</item>
+        <item>Calculator</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!-- Nav Slider Icons -->
+    <array name="nav_slider_icons">
+        <item>@drawable/home_icon</item>
+        <item>@drawable/profile</item>
+        <item>@drawable/search_logo</item>
+        <item>@drawable/calculator</item>
+        <item>@drawable/settings_logo</item>
+    </array>
+
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+
+    <!-- Menu Options -->
+    <string name="action_home">Home</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_caculate_metrics">Calculate Metrics</string>
+    <string name="action_search">Search</string>
+    <string name="action_my_programs">My Programs</string>
+
+    <string-array name="homepage_names">
+        <item>Training Programs</item>
+        <item>Calculations</item>
+        <item>Favourites</item>
+        <item>Stats</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="button_names">
+        <item>Training</item>
+        <item>Statistics</item>
+    </string-array>
+
+    <string name="confirm_registry">Email not found. Do you want to register? </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="complete_registration">Confirm?</string>
+    <string name="updatingReport">Updating Report</string>
+    <string name="testing">id is 2!!!</string>
+    <string name="unsuccessful">Unsuccessful</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_azure_services">AzureServicesActivity</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_test_adding">Login</string>
+    <string name="title_activity_call_api">CallAPI</string>
+    <string name="title_activity_training__program">Training_Program</string>
+    <string name="title_activity_training_program">TrainingProgram</string>
+    <string name="title_activity_list_program">ListProgram</string>
+    <string name="title_trainingprogram_list">Training Programs</string>
+    <string name="title_trainingprogram_detail">Training Program Detail</string>
+    <string name="title_test_list">Tests</string>
+    <string name="title_test_detail">Test Detail</string>
+    <string name="title_activity_stats">Stats</string>
+    <string name="title_activity_calc_health_metrics">CalcHealthMetrics</string>
+    <string name="title_personalprogram_list">PersonalPrograms</string>
+    <string name="title_personalprogram_detail">PersonalProgram Detail</string>
+    <string name="title_activity_account">Account</string>
+
+    <!--actionbar items-->
+    <string name="searchT">Search</string>
+    <string name="homeT">Home</string>
+
+    <!-- Register layout -->
+    <string name="register">Register</string>
+    <string name="userName">UserName</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+
+    <!-- EditProfile Layout -->
+    <string name="userDOB">Date of Birth (dd/MM/yyyy)</string>
+    <string name="bmiText">BMI</string>
+    <string name="bmrText">BMR</string>
+    <string name="caloriesText">Recommended Calorie Intake</string>
+    <string name="heartRangeText">Heart Rate Range</string>
+    <string name="dash">&#45;</string>
+    <string name="showHelp">Show Help</string>
+
+    <!-- References Text -->
+    <string name="refsTitle">References</string>
+    <string name="refs">http&#58;//www.irishrugby.ie/playingthegame/fitness/theyoungplayer/strength&#95;training.php</string>
+    <!-- Login layout -->
+    <string name="reg">Not a member? <u>Register Now</u></string>
+    <string name="signInBtn">Sign In</string>
+
+    <!-- HomePage Layout -->
+    <string name="logoutBtn">Logout</string>
+
+    <!-- Training Program Layout -->
+    <string name="searchBtn">Search</string>
+    <string name="headingSearch">Find Your Program</string>
+
+
+    <!-- BMI Layout -->
+    <string name="weightField">Weight</string>
+    <string name="heightField">Height</string>
+    <string name="ageField">Age</string>
+    <string name="ftLabel">ft</string>
+    <string name="inLabel">In</string>
+    <string name="calcu">Calculate</string>
+    <string name="createAccount">Create Account</string>
+    <string name="title_activity_register_new">RegisterNew</string>
+
+    <!-- exit button -->
+    <string name="xBtn">X</string>
+    <!-- BMIDialog Layout -->
+    <string name="BMIheading">Body Mass Index(BMI)</string>
+    <string name="BMIdesc">The body mass index (BMI) is a physical measurement used to assess an individual\’s total amount of body fat. The BMI was invented by Belgian polymath Adolphe Quetelet in the 1800s, and consequently is sometimes known as the Quetelet index. The BMI is calculated by dividing your weight in (lbs) by your height (in) squared (m2) and multiplying by 703.</string>
+    <string name="BMIheading2"><u>What does your BMI mean?</u></string>
+    <string name="BMIdesc2">The BMI scores give an indirect measure of body fat. Depending on the BMI value calculated you may be underweight, healthy weight, overweight or obese. The cut off values are as follows:</string>
+    <string name="BMItableHeading"><u>Table 1: BMI cut-off values</u></string>
+    <string name="classif">Classification</string>
+    <!-- Table row 2 -->
+    <string name="class1"> &#60; 18.5</string>
+    <string name="under">Underweight</string>
+    <!-- Table row 3 -->
+    <string name="class2"> 18.5&#45;24.9</string>
+    <string name="healthy">Healthy Weight</string>
+    <!-- Table row 4 -->
+    <string name="class3"> 25.0&#45;29.9</string>
+    <string name="over">Overweight</string>
+    <!-- Table row 5 -->
+    <string name="class4"> 30.0&#45;34.9</string>
+    <string name="obese1">Obese Class 1</string>
+    <!-- Table row 6 -->
+    <string name="class5"> 35.0&#45;39.9</string>
+    <string name="obese2">Obese Class 2</string>
+    <!-- Table row 7 -->
+    <string name="class6"> &#62;40.0</string>
+    <string name="obese3">Obese Class 3</string>
+
+    <string name="BMIheading3"><u>Why are BMIs useful?</u></string>
+    <string name="BMIdesc3">The BMI is a simple, inexpensive screening tool used to identify possible weight problems for both adults and children. A BMI measurement is useful to assess who needs further testing to identify health risks such as heart disease. Individuals at risk will need further assessment. Assessments may include skin fold thickness test, diet, physical activity level, family history and other appropriate health screenings.</string>
+
+    <!-- BMRDialog Layout -->
+    <string name="BMRheading">Basal Metabolic Rate(BMR)</string>
+    <string name="BMRdesc">Basal metabolic rate (BMR) is the amount of energy required to maintain the body\'s normal metabolic activity, such as respiration, maintenance of body temperature (thermogenesis), and digestion. Specifically, it is the amount of energy required at rest with no additional activity. The energy consumed is sufficient only for the functioning of the vital organs such as the heart, lungs, nervous system, kidneys, liver, intestine, sex organs, muscles, and skin.</string>
+    <string name="var"><u>Variance</u></string>
+    <string name="varDesc">The basal metabolic rate generally decreases with age or if there is a decline in lean body mass.  In order to maintain the resting metabolic rate as we age, requires regular strength training in order to prevent loss of skeletal muscle. Activities that tend to increase muscle mass (lean tissue) such as body building or strength training  (anaerobic activities), will also increase the basal or resting metabolic rate.   Aerobic activities such as running, skating,  or rope jumping may improve endurance but have little effect on the basal or resting metabolic rate (see post&#45;exercise expenditure below).  Other factors that may affect the BMR or RMR include stress, illness, hormone levels (e.g. thyroid), environmental (e.g. temperature or altitude) or any other factor that effects the normal functioning of one or more vital organs.
+Lean tissue requires significantly more energy to maintain because of the increased level of metabolic activity. In contrast, fat tissue requires very little energy to maintain and has little influence on the resting or basal metabolic energy needs.
+Greater lean body mass &#61; Greater BMR or RMR.
+Because individuals can increase their total lean body mass through strength training (corresponding increase in skeletal muscle), it is possible to increase the overall basal energy requirements at rest.</string>
+    <string name="BMRsubHeading"><u>Post-exercise energy expenditure</u></string>
+    <string name="BMRdesc2">The amount of additional energy (above the resting or basal metabolic needs) expended after an activity depends on the intensity and duration of the exercise session. More intense sessions tend to increase resting energy needs for longer time periods. These increased energy requirements occur during the cool&#45;down phase and are short&#45;lived. Sustained increases in the resting or basal metabolic rate can only be obtained through regular strength training routines that increase lean body mass.</string>
+    <string name="summ"><u>Summary</u></string>
+    <string name="summDesc">Aerobic activity&#58; short lived increases in RMR/BMR (cool-down period)
+Anaerobic activity (regular)&#58; increases in lean body weight (LBW) &#45;&#45;&#62; Sustained increases in RMR&#47;BMR.</string>
+
+    <!-- CalorieDialog -->
+    <string name="caloriesHeading">Calorie Intake</string>
+    <string name="caloriesDesc"></string>
+    <string name="util"><u>Utilization</u></string>
+    <string name="utilDesc">The baseline BMR or RMR can be used along with stress/activity factors to estimate the daily caloric needs of an individual &#47; (Total Energy Expenditure (TEE)  (kcal&#47;day)).   See error rate below.</string>
+    <string name="TEEh"><u>Total Energy Expenditure (TEE)</u></string>
+    <string name="TeeD">The total energy expenditure (amount of calories needed per day) is composed of three primary factors: (1) Resting or basal metabolic rate   (2) Thermic effect of food  (3) Activities of daily living (ADL) &#45; physical activity.
+    Thermic effect of food (TEF):
+    Rough estimation: TEF &#61; Total calories consumed&#47;day x 0.1
+    Example: 2000 kcal diet.    TEF &#61; 2000 x 0.1 &#61; 200 kcal&#47;day.
+    TEF of protein &#62;&#62;carbohydrates&#62;&#62;fats.</string>
+    <string name="factors"><u>Activity/Stress factors</u></string>
+    <string name="factorsDesc">The following activity&#47;stress factors when used along with an estimation of the resting or basal metabolic rate can be used to estimate an individual\'s total energy expenditure (TEE) in kcal&#47;day  (recommend daily calories to maintain current weight &#61; RMR &#43; TEF &#43; ADL).</string>
+    <string name="activityLevelH">Activity Level</string>
+    <string name="dailyKcals">Daily Calories</string>
+    <string name="sedU"><u>Sedentary</u></string>
+    <string name="mildU"><u>Mild</u></string>
+    <string name="moderateU"><u>Moderate</u></string>
+    <string name="activityModU"><u>Heavy</u></string>
+    <string name="extremeU"><u>Extreme</u></string>
+
+    <string name="sed">Sedentary</string>
+    <string name="mild">Mild</string>
+    <string name="moderate">Moderate</string>
+    <string name="heavy">Heavy</string>
+    <string name="extreme">Extreme</string>
+
+    <string name="dailySed">BMR x 1.2</string>
+    <string name="dailyMild">BMR x 1.3 &#45; 1.375</string>
+    <string name="dailyModerate">BMR x 1.5 &#45; 1.55</string>
+    <string name="dailyHeavy">BMR x 1.7</string>
+    <string name="dailyExtreme">BMR x 1.9</string>
+    <string name="activityLevelDescH">Activity Level Description</string>
+    <string name="activitySedD">Little to no exercise</string>
+    <string name="activityMildD">Intensive exercise for at least 20 minutes 1 to 3 times per week. This may include such things as bicycling, jogging, basketball, swimming, skating, etc.  If you do not exercise regularly, but you maintain a busy life style that requires you to walk frequently for long periods, you meet the requirements of this level.</string>
+    <string name="activityModD"> Intensive exercise for at least 30 to 60 minutes 3 to 4 times per week. Any of the activities listed above will qualify.</string>
+    <string name="activityHeavyD">Intensive exercise for 60 minutes or greater 5 to 7 days per week (see sample activities above).  Labor&#45;intensive occupations also qualify for this level.  Labor&#45;intensive occupations include construction work (brick laying, carpentry, general labor, etc.). Also farming, landscape worker or similar occupations.</string>
+    <string name="activityExtremeD">Exceedingly active and&#47;or very demanding activities&#58;  Examples include&#58;  athlete with an almost unstoppable training schedule with multiple training sessions throughout the day or a very demanding job, such as shoveling coal or working long hours on an assembly line. Generally, this level of activity is very difficult to achieve.</string>
+    <string name="activityHDes"><u>Heavy or (Labor-intensive)</u></string>
+    <!-- Metabolism Layout -->
+    <string name="genderLabel">Gender</string>
+    <string name="maleRadio">Male</string>
+    <string name="femaleRadio">Female</string>
+    <string name="calcBtn">Calculate</string>
+    <string name="weightLbs">&#160;&#160;lbs</string>
+
+    <!-- Calorie Intake -->
+    <string name="bmrLabel">BMR</string>
+    <string name="activityLabel">Activity Level</string>
+
+    <!-- Target Heart Rate -->
+    <string name="maxHeartRateLabel">Max Heart Rate</string>
+    <string name="heartRateLabel">Heart Rate</string>
+    <string name="heartRateRangeLabel">Heart Rate Range</string>
+    <string name="zoneOptions">Different zones</string>
+    <string name="heartIntro">Heart rate training zones are calculated by taking into consideration your Maximum Heart Rate (HRmax) and your Resting Heart Rate (HRrest). Within each training zone, subtle physiological effects take place to enhance your fitness.</string>
+    <string name="zone1Heading"><u>The Energy Efficient or Recovery Zone &#45; 60&#37; to 70&#37;</u></string>
+    <string name="zone1Desc">Training within this zone develops basic endurance and aerobic capacity. All easy recovery running should be completed at a maximum of 70&#37;. Another advantage to running in this zone is that while you are happily fat burning you may lose weight and you will be allowing your muscles to re&#45;energise with glycogen, which has been expended during those faster paced workouts.</string>
+    <string name="zone2Heading"><u>The Aerobic Zone - 70&#37; to 80&#37;</u></string>
+    <string name="zone2Desc">Training in this zone will develop your cardiovascular system. The body\'s ability to transport oxygen to, and carbon dioxide away from, the working muscles can be developed and improved. As you become fitter and stronger from training in this zone it will be possible to run some of your long weekend runs at up to 75&#37;, so getting the benefits of some fat burning and improved aerobic capacity.</string>
+    <string name="zone3Heading"><u>The Anaerobic Zone &#45; 80&#37; to 90&#37;</u></string>
+    <string name="zone3Desc">Training in this zone will develop your lactic acid system. In this zone, your individual anaerobic threshold (AT) is found &#45; sometimes referred to the point of deflection (POD). During these heart rates, the amount of fat being utilised as the main source of energy is greatly reduced and glycogen stored in the muscle is predominantly used. One of the by&#45;products of burning this glycogen is lactic acid. There is a point at which the body can no longer remove the lactic acid from the working muscles quickly enough. This is your anaerobic threshold (AT). Through the correct training, it is possible to delay the AT by being able to increase your ability to deal with the lactic acid for a longer period of time or by pushing the AT higher.</string>
+    <string name="zone4Heading"><u>The Red Line Zone 90&#37; to 100&#37;</u></string>
+    <string name="zone4Desc">Training in this zone will only be possible for short periods. It effectively trains your fast twitch muscle fibres and helps to develop speed. This zone is reserved for interval running and only the very fit are able to train effectively within this zone.</string>
+    <!-- Fragment Training Program Layout -->
+    <string name="saveBtn">Save Program</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <!-- Account Layout -->
+    <string name="dob">Date Of Birth</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="edit">Edit</string>
+
+    <!-- Profile Layout -->
+    <string name="programs">My Programs</string>
+    <string name="graph">Graph</string>
+    <string name="title_graph_list">graphs</string>
+    <string name="title_graph_detail">graph Detail</string>
+
+    <!-- Home page new layout -->
+    <string name="profileHome">Profile</string>
+    <string name="programSearch">Program Finder</string>
+    <string name="calc">Calcs</string>
+    <string name="news">Latest News</string>
+    <string name="mentalPic">Participation in physical activity and sport has been shown to be effective for reducing&#58; depression, anxiety, psychological distress, emotional disturbance. A review of research on this topic found that low-to-moderate physical exercise, even in a single session, can reduce anxiety.
+Another year-long study concluded that increases in aerobic fitness have both short and long-term beneficial effects on psychological health.</string>
+    <string name="recoveryPic">It is rest that makes you stronger, because it is the rest that allows the muscles that you have broken down to heal and recover. It is the rest that allows you to recover so you can be strong, and thereby handle the increased weight, and increased number of sets and reps needed to gain further.</string>
+    <string name="plyoPic">Plyometrics are also called plyos, and they consist of powerful and fast movements. They involve relaxing and contracting muscles in fast sequences, making use of elasticity, innervations, and strength of tissues and muscles that are involved in running faster, jumping higher, and throwing farther. Thus plyometrics are especially useful for track and field athletes. Soccer, rugby, racket sports, martial arts, and basketball also make use of plyometrics.</string>
+    <string name="vitDpic">There is strong correlation between vitamin D sufficiency and optimal muscle function. Increasing levels of vitamin D reduce inflammation, pain, and myopathy while increasing muscle protein synthesis, ATP concentration, strength, jump height, jump velocity, jump power, exercise capacity, and physical performance.</string>
+    <string name="regPic">Physical activity that makes you puff and sweat is key to avoiding an early death, a large study of middle-aged and older adults has found.
+The researchers followed 204,542 people for more than six years, and compared those who engaged in only moderate activity (such as gentle swimming, social tennis, or household chores) with those who included at least some vigorous activity (such as jogging, aerobics or competitive tennis).</string>
+    <!-- fragment_graph_detail Layout -->
+    <string name="exercise">Choose Exercise</string>
+
+    <!-- fragment_personalprogram_detail Layout -->
+    <string name="lifts">Initial Lifts</string>
+    <string name="update">Update Lifts</string>
+    <string name="title_activity_program_results">ProgramResults</string>
+
+    <!-- dynamic text -->
+    <string name="addP">&#43;</string>
+    <string name="durTitle">Duration</string>
+    <string name="exerTitle">Exercises</string>
+    <string name="exerHint">Click on any of the exercises to find out more!</string>
+    <!-- program_results Layout -->
+    <string name="programRTitle">Program Results</string>
+    <string name="saveButton">Save</string>
+    <string name="title_activity_liked_dialog">LikedDialog</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+
+    <!-- custom_help -->
+    <string name="okBtn">Ok</string>
+    <string name="helpTitle">Program Results</string>
+    <string name="programRDesc">Welcome to the Result section. Select an exercise from the list below and enter the value you were able to perform it based on the currently selected program.</string>
+    <string name="ex1">Example 1</string>
+    <string name="ex1Desc">If the current program had the user perform a Bench Press at 5 repetitions for 3 sets then you would enter in the maximum amount of weight you were able to lift for that number of repetitions in any of the 3 sets. Weight can be entered as you like, e.g. kg, lbs</string>
+    <string name="ex2">Example 2</string>
+    <string name="ex2Desc">If the current program had the user perform 5x100m sprints then you would enter in the fastest time you were able to complete any of these in. Time can be entered as you like, e.g. seconds, minutes</string>
+    <string name="showOption">Don\'t show again</string>
+    <string name="dontWorry">You can change this later in Settings</string>
+
+    <!-- custom_help_graph -->
+    <string name="gTitle">Graph</string>
+    <string name="graphD">Welcome to your graph. Here is where you can a view your progress in a training program based on the results you have entered in the program results section. \nFirst, select one of your programs you have started. \nSecond, choose an exercise from that program to view your progress. \nNot entered any results yet? Dont\'t worry head over to the program results section now to start making some gains!</string>
+
+    <!-- custom_help_calcs -->
+    <string name="cTitle">Fitness Calculator</string>
+    <string name="cDesc">Welcome to the Fitness Calculator. This is where you can work out your fitness/health values. If you want to make a note of these values simply click save and the result will be added to your profile which you can later review in the settings section. If you need anymore information simply click the information icon located on the right of the list. Happy Training :)</string>
+
+    <!-- fragment_beginner_dialog -->
+    <string name="beginnerT">Beginner</string>
+    <string name="beginnerD">These programs are suitable for those who have little experience in this sport. These programs are ideal for those who have been training in this sport for less than 1 year.</string>
+
+    <!-- fragment_intermediate_dialog -->
+    <string name="intermediateT">Intermediate</string>
+    <string name="intermediateD">These programs are suitable for those who have some experience in this sport. These programs are ideal for those who have been training in this sport for 1-3 years.</string>
+
+    <!-- fragment_advanced_dialog -->
+    <string name="advancedT">Advanced</string>
+    <string name="advancedD">These programs are suitable for those who have a lot of experience in this sport. These programs are ideal for those who have been training in this sport for more than 3 years.</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- map_layout -->
+    <string name="foodTitle">Search for Food</string>
+    <string name="m">Map</string>
+
+</resources>

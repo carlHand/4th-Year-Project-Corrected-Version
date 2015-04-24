@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <!--<color name="nav_selected">#ff33B5E5</color>-->
+    <color name="homepage_btns_background">#463E3F</color>
+    <color name="btnBackground">#ddd</color>
+</resources>

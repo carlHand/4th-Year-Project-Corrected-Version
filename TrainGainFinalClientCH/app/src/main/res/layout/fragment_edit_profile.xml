@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.projectyr4x00091174.carl.traingain.EditProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilePic"
+        android:src="@drawable/home_icon" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/profilePic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeEdit">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userName"
+        android:id="@+id/userNid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameT"
+        android:layout_below="@+id/userNid" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/userEmailText"
+        android:layout_below="@+id/userNameT" />
+
+        <AutoCompleteTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/userEmailEdit"
+        android:layout_below="@+id/userEmailText" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:id="@+id/passText"
+        android:layout_below="@+id/userEmailEdit" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passEdit"
+        android:layout_below="@+id/passText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userDOB"
+        android:id="@+id/userDOBtext"
+        android:layout_below="@+id/passEdit" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/dateEdit"
+        android:layout_below="@+id/userDOBtext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genderLabel"
+        android:id="@+id/genderText"
+        android:layout_below="@+id/dateEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/radioGid"
+        android:layout_below="@+id/genderText"
+        android:layout_alignRight="@+id/dateEdit"
+        android:layout_alignEnd="@+id/dateEdit">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maleRadio"
+            android:id="@+id/radioButtonM" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femaleRadio"
+            android:id="@+id/radioButtonF"/>
+
+    </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bmiText"
+                android:id="@+id/BMItext"
+                android:layout_below="@+id/radioGid" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/BMIedit"
+                android:layout_below="@+id/BMItext"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bmrLabel"
+                android:id="@+id/BMRtext"
+                android:layout_below="@+id/BMIedit" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/BMRedit"
+                android:layout_below="@+id/BMRtext"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maxHeartRateLabel"
+                android:id="@+id/heartMaxTextL"
+                android:layout_below="@+id/BMRedit" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/heartMaxEdit"
+                android:layout_below="@+id/heartMaxTextL" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heartRangeText"
+                android:id="@+id/heartRangeText"
+                android:layout_below="@+id/heartMaxEdit" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/heartRangeEdit"
+                android:layout_below="@+id/heartRangeText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash"
+                android:id="@+id/dashText"
+                android:layout_below="@+id/heartRangeText"
+                android:layout_toRightOf="@+id/heartRangeEdit"
+                android:layout_toEndOf="@+id/heartRangeEdit"/>
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/heartRangeEdit2"
+                android:layout_below="@+id/heartRangeText"
+                android:layout_toRightOf="@+id/dashText"
+                android:layout_toEndOf="@+id/dashText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/caloriesText"
+                android:id="@+id/caloriesText"
+                android:layout_below="@+id/heartRangeEdit" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/calorieEdit"
+                android:layout_below="@+id/caloriesText" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/showHelp"
+                android:id="@+id/toggleLabel"
+                android:layout_below="@+id/calorieEdit" />
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButtonHelp"
+                android:textOff="Off"
+                android:textOn="On"
+                android:layout_below="@+id/toggleLabel"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saveButton"
+                android:id="@+id/saveEdit"
+                android:layout_below="@id/toggleButtonHelp"
+                android:background="@color/btnBackground"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/logoutButton"
+                android:layout_toRightOf="@+id/saveEdit"
+                android:layout_toEndOf="@+id/saveEdit"
+                android:layout_below="@+id/toggleButtonHelp"
+                android:background="@color/btnBackground"/>
+
+
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

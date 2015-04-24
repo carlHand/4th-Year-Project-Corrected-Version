@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/bmiRelative"
+    tools:context="com.projectyr4x00091174.carl.traingain.BMIDialog">
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewBMI"
+        android:layout_marginTop="30dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmiHeading"
+                android:text="@string/BMIheading"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmiIntro"
+                android:text="@string/BMIdesc"
+                android:layout_below="@+id/bmiHeading"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BMIheading2"
+                android:id="@+id/bmiHeading2"
+                android:layout_below="@+id/bmiIntro"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BMIdesc2"
+                android:id="@+id/bmiMean"
+                android:layout_below="@+id/bmiHeading2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BMItableHeading"
+                android:id="@+id/bmiTableHeading"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/bmiMean"
+                android:textColor="@color/white"/>
+
+            <TableLayout android:id="@+id/tab" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_below="@+id/bmiTableHeading">
+                <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/heading1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/bmiText" android:textColor="@color/black"></TextView>
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/heading2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/classif" android:textColor="@color/black"></TextView>
+
+
+                </TableRow>
+                <TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/class1"></TextView>
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row2Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/under"></TextView>
+                </TableRow>
+
+                <TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView  android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row3Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/class2"></TextView>
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row3Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView"></TextView>
+
+                </TableRow>
+                <TableRow android:id="@+id/tableRow4" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row4Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/class3"></TextView>
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row4Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/over"></TextView>
+
+                </TableRow>
+                <TableRow android:id="@+id/tableRow5" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row5Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/class4"></TextView>
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row5Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/obese1"></TextView>
+
+                </TableRow>
+                <TableRow android:id="@+id/tableRow6" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row6Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/class5"></TextView>
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row6Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/obese2"></TextView>
+
+                </TableRow>
+                <TableRow android:id="@+id/tableRow7" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row7Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/class6"></TextView>
+                    <TextView android:background="@drawable/table_cell_shape" android:padding="5dp" android:id="@+id/row7Text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/obese3"></TextView>
+
+                </TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BMIheading3"
+                    android:id="@+id/bmiHeading3"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BMIdesc3"
+                    android:id="@+id/bmiDesc3"
+                    android:layout_below="@+id/bmiHeading3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"/>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="@string/xBtn"
+        android:id="@+id/xBt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+
+</RelativeLayout>

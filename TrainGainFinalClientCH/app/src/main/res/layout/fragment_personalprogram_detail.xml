@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottomBar" >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/programScroll"
+        android:layout_gravity="center_horizontal|top" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/personalLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/personalprogram_detail_title"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:textIsSelectable="true"
+                tools:context="com.projectyr4x00091174.carl.traingain.TrainingProgramDetailFragment"
+                 />
+
+            <TextView
+                android:id="@+id/personalprogram_detail"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:textIsSelectable="true"
+                tools:context="com.projectyr4x00091174.carl.traingain.TrainingProgramDetailFragment"
+                />
+
+            <TextView
+                android:id="@+id/personalprogram_duration_title"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:textIsSelectable="true"
+                tools:context="com.projectyr4x00091174.carl.traingain.TrainingProgramDetailFragment"
+                />
+
+            <TextView
+                android:id="@+id/personalprogram_duration_info"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:textIsSelectable="true"
+                tools:context="com.projectyr4x00091174.carl.traingain.TrainingProgramDetailFragment"
+                 />
+
+            <TextView
+                android:id="@+id/personalprogram_exercises"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:textIsSelectable="true"
+                tools:context="com.projectyr4x00091174.carl.traingain.TrainingProgramDetailFragment"
+                />
+
+            <TextView
+                android:id="@+id/personalprogram_hint"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:textIsSelectable="true"
+                tools:context="com.projectyr4x00091174.carl.traingain.TrainingProgramDetailFragment"
+                />
+
+        </LinearLayout>
+</ScrollView>
+</RelativeLayout>

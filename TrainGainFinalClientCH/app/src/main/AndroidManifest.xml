@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projectyr4x00091174.carl.traingain"
+    android:installLocation="preferExternal" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.com.projectyr4x00091174.carl.traingain.permission.MAPS_RECEIVE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <!-- Optional but recommended -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Optionally add ONE of the following to include location data in comments -->
+    <!-- Permissions required for Push Notifications -->
+    <!-- Replace your_package_name with your app package name -->
+    <permission
+        android:name="com.projectyr4x00091174.carl.traingain.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.projectyr4x00091174.carl.traingain.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Google Cloud Messaging Requires these additional permissions -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <!--
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        -->
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
+            android:launchMode="singleTop" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.projectyr4x00091174.carl.traingain.Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        -->
+        <activity
+            android:name=".TestAdding"
+            android:exported="true"
+            android:label="@string/app_title" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchProgram"
+            android:icon="@drawable/main_logo"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.HomePage" />
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:icon="@drawable/main_logo"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".TrainingProgramListActivity"
+            android:label="@string/title_trainingprogram_list"
+            android:parentActivityName=".SearchProgram"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".TrainingProgramDetailActivity"
+            android:label="@string/title_trainingprogram_detail"
+            android:parentActivityName=".TrainingProgramListActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.TrainingProgramListActivity" />
+        </activity>
+        <activity
+            android:name=".CalcHealthMetrics"
+            android:label="@string/title_activity_calc_health_metrics"
+            android:parentActivityName=".HomePageNew"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.HomePageNew" />
+        </activity>
+        <activity
+            android:name=".PersonalProgramListActivity"
+            android:label="@string/title_personalprogram_list"
+            android:parentActivityName=".Profile"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".PersonalProgramDetailActivity"
+            android:label="@string/title_personalprogram_detail"
+            android:parentActivityName=".PersonalProgramListActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.PersonalProgramListActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterNew"
+            android:label="@string/register_title"
+            android:parentActivityName=".TestAdding" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.TestAdding" />
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".GraphListActivity"
+            android:label="@string/title_graph_list"
+            android:parentActivityName=".Profile"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".GraphDetailActivity"
+            android:label="@string/title_graph_detail"
+            android:parentActivityName=".GraphListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.GraphListActivity" />
+        </activity>
+        <activity
+            android:name=".ProgramResults"
+            android:label="@string/title_activity_program_results"
+            android:parentActivityName=".PersonalProgramDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.projectyr4x00091174.carl.traingain.PersonalProgramDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.socialize.ui.comment.CommentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name="com.socialize.ui.action.ActionDetailActivity" />
+        <activity android:name="com.socialize.ui.profile.ProfileActivity" />
+        <activity android:name="com.socialize.auth.facebook.FacebookActivity" />
+
+        <!-- Activities Required for Socialize Push Notifications -->
+        <activity
+            android:name="com.socialize.ui.SocializeLaunchActivity"
+            android:noHistory="true" />
+
+        <!-- Socialize Notification Receiver -->
+        <service android:name="com.socialize.notifications.SocializeC2DMReceiver" />
+
+        <!-- Replace your_package_name with your app package name -->
+        <receiver
+            android:name="com.socialize.notifications.SocializeBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.projectyr4x00091174.carl.traingain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.projectyr4x00091174.carl.traingain" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LikedDialog"
+            android:label="@string/title_activity_liked_dialog" >
+        </activity>
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            >
+        </activity>
+    </application>
+
+</manifest>
